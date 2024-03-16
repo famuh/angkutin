@@ -1,8 +1,7 @@
-import 'package:angkutin/constant.dart';
-import 'package:angkutin/main.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils.dart';
+import '../../common/constant.dart';
+import '../../common/utils.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -33,16 +32,17 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
                 width: mediaQueryWidth(context),
                 child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsetsDirectional.symmetric(vertical: 14),
-                    backgroundColor: cGreenStrong,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)) 
-                  ),
-                    onPressed: () {
-                      
-                    }, child: const Text("Masuk dengan Google", style: TextStyle(
-                      color: Colors.white
-                    ),)))
+                    style: ElevatedButton.styleFrom(
+                        padding:
+                            const EdgeInsetsDirectional.symmetric(vertical: 14),
+                        backgroundColor: cGreenStrong,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12))),
+                    onPressed: () {},
+                    child: const Text(
+                      "Masuk dengan Google",
+                      style: TextStyle(color: Colors.white),
+                    )))
           ],
         ),
       ),
